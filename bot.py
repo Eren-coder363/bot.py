@@ -7,9 +7,6 @@ bot = commands.Bot(command_prefix='$', intents=intents)
 async def on_ready():
     print(f'{bot.user} olarak giriş yaptık')
 @bot.command()
-async def hello(ctx):
-    await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
-@bot.command()
 async def nasilsin(ctx):
     await ctx.send("Ben bir yapay zeka botuyum, duygularım yok")
 @bot.command()
